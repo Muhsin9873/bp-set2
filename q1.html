@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       let a = parseInt(prompt("Enter the coefficients of a: "));
+       let b = parseInt(prompt("Enter the coefficients of b: "));
+       let c = parseInt(prompt("Enter the coefficients of c: "));
+       document.write("The coefficient of a is "+a);
+       document.write("<br>")
+       document.write("The coefficient of b is "+b);
+       document.write("<br>")
+       document.write("The coefficient of c is "+c);
+       document.write("<br>")
+       let d = b**2-4*a*c; 
+       
+       if(d<0)
+          {
+            document.write("This equation has no real solution");  
+          }
+       else
+           {
+            let x = (-b + Math.sqrt(b**2-4*a*c)) / (2 * a);
+            let y = (-b - Math.sqrt(b**2-4*a*c)) / (2 * a);
+            document.write("solution of quadratic equation is "+x,","+y);
+           } 
+    </script>
+</body>
+</html>
